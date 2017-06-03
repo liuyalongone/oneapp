@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>oneapp</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+    <script>
+        var ometa = document.getElementsByName("viewport")[0];
+        //下面这句话加上和不加是一样的
+        //ometa.content ="width=device-width,initial-scale="+1/window.devicePixelRatio+",user-scalable=no";
+        //让可布局宽度跟设计稿是一样的KB
+        //动态计算fontsize
+        document.documentElement.style.fontSize =document.documentElement.clientWidth/750*100 +"px";
+        // console.log(document.documentElement.clientWidth)//计算方便，设置成了100px
+        //document.documentElement.clientWidth/设计稿的宽度*100 (iphone6 就是750，iphone5 就是640)
+    </script>
+  </head>
+  <body>
+    <div id="app">
+
+    </div>
+    <script src="dist/build.js"></script>
+  </body>
+</html>
