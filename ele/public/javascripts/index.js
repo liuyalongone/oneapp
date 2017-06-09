@@ -1,0 +1,19 @@
+/**
+ * Created by Administrator on 2017/4/17.
+ */
+$.ajax({
+    url:"/api/restaurant",
+    data:{id:"all"},
+    dataType:"json",
+    success:function(result){
+        console.log(result);
+    }
+})
+$.ajax({
+    url:"/api/",
+    data:{},
+    dataType:"json",
+    success:function(result){
+        console.log(result);
+    }
+})
